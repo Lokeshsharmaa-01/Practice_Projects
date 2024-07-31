@@ -1,6 +1,7 @@
-let element = document.querySelector('#push')
+const element = document.querySelector('#push');
 
-element.onclick = function(){
+element.addEventListener('click', doing)
+function doing(){
     // input  validation
     if(document.querySelector('#newtask input').value.length == 0){
         alert("Please Enter a Task")
